@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather api</title>
+    <!-- the code below was inspried by a video on youtube -->
     <script src="https://kit.fontawesome.com/1b7f662bbe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assate/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
 </head>
 
+<header>
+    <h1>
+     Weekly weather repor
+    </h1>
+</header>
 
 <body>
-    <header>
-        <h1>
-         Weekly weather repor
-        </h1>
-    </header>
+   
     
 
     <mian >
@@ -25,7 +27,63 @@
         <div class="searchBox">
             <i class="fa-solid fa-location-dot"></i>
             <input type="text" placeholder="Search for a City">
-            <button class="fa-solid fa-magnifying-glass"></button>
+            <button class="fa-solid fa-magnifying-glass" id="searchbutton"></button>
+        </div>
+
+        <div class="invalid location">  
+            <p>Please type in a correct city.</p>
+        </div>
+        
+        <div id="weeklyForcast">
+            <div id="weather-status" class="card" >
+                <ul >
+                    <li id="temp1"></li>
+                    <li id="wind1"></li>
+                    <li id="humid1"></li>
+                    <li id="icon1"></li>
+                    <li id="uvi1"></li>
+                </ul>
+            </div>
+
+            <div id="weather-status" class="card" >
+                <ul >
+                    <li id="temp2"></li>
+                    <li id="wind2"></li>
+                    <li id="humid2"></li>
+                    <li id="icon2"></li>
+                    <li id="uvi2"></li>
+                </ul>
+            </div>
+
+            <div id="weather-status" class="card" >
+                <ul >
+                    <li id="temp3"></li>
+                    <li id="wind3"></li>
+                    <li id="humid3"></li>
+                    <li id="icon3"></li>
+                    <li id="uvi3"></li>
+                </ul>
+            </div>
+
+            <div id="weather-status" class="card" >
+                <ul >
+                    <li id="temp4"></li>
+                    <li id="wind4"></li>
+                    <li id="humid4"></li>
+                    <li id="icon4"></li>
+                    <li id="uvi4"></li>
+                </ul>
+            </div>
+
+            <div id="weather-status" class="card">
+                <ul >
+                    <li id="temp5"></li>
+                    <li id="wind5"></li>
+                    <li id="humid5"></li>
+                    <li id="icon5"></li>
+                    <li id="uvi5"></li>
+                </ul>
+            </div>
         </div>
 
     </mian>

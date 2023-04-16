@@ -1,9 +1,12 @@
 .root{
-    --main: #0000;
+    --main: #b7f1c4;
     --: #0000;
     --: #0000;
     --: #0000;
     --: #0000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -11,13 +14,22 @@ html{
 }
 
 header{
+    height: 10vh;
     display: flex;
     margin: -00.1em;
 
 }
 
 body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main);
 
 }
 
-
+.searchBox{
+        
+}

@@ -29,6 +29,6 @@ of that object's data. The first one is 1681333200.
 Want to see why arrow functions are cool? Combined with an array method you haven't learned 
 yet, we can do all this work in one line of code. We will show you array.filter() later!
 */ 
-
+//this code was inspried by our teacher
 const newForecastArr2 = sample.list.filter( (_dayObj, idx) => idx % 8 === 0)
 console.log(newForecastArr2)
