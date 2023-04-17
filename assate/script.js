@@ -1,12 +1,11 @@
 const search = document.querySelector(".searchBox button")
 //var api ="https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=3623f28106c0768d3dd0c0c773617d27"
 //console.log(api)
+const clearButton = document.querySelector(".searchBox .clear-button");
 const APIkey = "3623f28106c0768d3dd0c0c773617d27";
+
 //var geoapi = "http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=3623f28106c0768d3dd0c0c773617d27";
 //console.log(geoapi)
-
-
-
 
 
 
@@ -18,17 +17,27 @@ search.addEventListener("click", () => {
     }
 })
 
+
+
 function geo(city) {
     var geoapi = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=3623f28106c0768d3dd0c0c773617d27`;
-        // return
+        
+
+    
         fetch(geoapi).then( function(response){
+            if (!response.ok) {
+            throw new Error("City not found. Please enter a valid city name.");
+            }
             return response.json()
         })
         .then(function (data) {
             console.log(data [0])
             getWeather(data [0])
         })
-        
+        .catch(function (error) {
+            console.log(error);
+            alert("City not found. Please enter a valid city name.");
+        });
 }
 
 

@@ -1,14 +1,7 @@
-.root{
-    --main: #b7f1c4;
-    --: #0000;
-    --: #0000;
-    --: #0000;
-    --: #0000;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    --main: hsla(231, 34%, 12%, 0.952);
+    --fontcolor: #2e7688;
 }
-
 html{
 
 }
@@ -17,6 +10,8 @@ header{
     height: 10vh;
     display: flex;
     margin: -00.1em;
+    border-radius: 28px;
+    
 
 }
 
@@ -26,10 +21,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--main);
-
+   
 }
 
-.searchBox{
-        
+body main div.searchBox{
+    border-radius: 20px;
 }
