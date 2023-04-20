@@ -20,7 +20,7 @@ search.addEventListener("click", () => {
 
 
 function geo(city) {
-    var geoapi = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=3623f28106c0768d3dd0c0c773617d27`;
+    var geoapi = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=3623f28106c0768d3dd0c0c773617d27`;
         
 
     
