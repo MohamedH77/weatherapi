@@ -1,18 +1,15 @@
 *{
-    --main: hsla(231, 34%, 12%, 0.952);
+    --main: hwb(0 3% 65%);
     --fontcolor: #2e7688;
 }
-html{
 
-}
+
 
 header{
     height: 10vh;
     display: flex;
     margin: -00.1em;
     border-radius: 28px;
-    
-
 }
 
 body{
@@ -21,9 +18,51 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+    letter-spacing: 2px;
+    
 }
 
-body main div.searchBox{
-    border-radius: 20px;
+#searchBox{
+    border-radius: 16px;
+    background-color: transparent;
+    border: none;
+    
+}
+#searchbutton{
+    border-radius: 6px;
+}
+
+
+#weeklyForcast{
+    background-color: transparent;
+    border: transparent;
+}
+
+#body {
+    background-image: url('./clouds.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(253, 11, 11);
+}
+
+#weekly1{
+    background-color: var(--main);
+    border-radius: 10px;
+}
+
+#weekly2{
+    background-color: hsl(341, 76%, 37%);
+    border-radius: 10px;
+}
+#weekly3{
+    background-color: hwb(29 0% 68%);
+    border-radius: 10px;
+}
+#weekly4{
+    background-color: hwb(341 41% 3%);
+    border-radius: 10px;
+}
+#weekly5{
+    background-color: hsl(341, 76%, 37%);
+    border-radius: 10px;
 }
